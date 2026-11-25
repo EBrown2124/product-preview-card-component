@@ -11,22 +11,22 @@
         --Cream: hsl(30, 38%, 92%);
         --White: hsl(0, 0%, 100%);
 
-        --spacing-50: 4px;
-        --spacing-100: 8px;
-        --spacing-200: 16px;
-        --spacing-300: 24px;
-        --spacing-400: 32px;
-        --spacing-500: 40px;
+        --spacing-50: 0.25rem;
+        --spacing-100: 0.5rem;
+        --spacing-200: 1rem;
+        --spacing-300: 1.5rem;
+        --spacing-400: 2rem;
+        --spacing-500: 2.5rem;
 
-        --text-size-1: 12px;
-        --text-size-2: 13px;
-        --text-size-3: 14px;
-        --text-size-4: 32px;
+        --text-size-1: 0.75rem;
+        --text-size-2: 0.8125rem;
+        --text-size-3: 0.875rem;
+        --text-size-4: 2rem;
     }
 
     .mobile-img {
         display: none;
-        width: 350px;
+        width: 100%;
     }
 
     *, *::before, *::after {
@@ -43,20 +43,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-self: center;
     align-items: center;
 }
 
 .card {
     background-color: var(--White);
-    width: 600px;
+    width: 37.5rem;
     display: flex;
     flex-direction: row;
     border-radius: var(--spacing-100);
 }
 
 .desktop-img{
-    width: 300px;
+    width: 18.75rem;
     border-radius: var(--spacing-100) 0 0 var(--spacing-100);
 }
 
@@ -67,9 +66,6 @@ section {
     gap: var(--spacing-400);
 }
 
-h1{
-    font-family:"Fraunces", serif;
-}
 
 p, span, button{
     font-family:"Montserrat", sans-serif;
@@ -83,12 +79,13 @@ p, span, button{
 }
 
 .product-text span{
-    letter-spacing: 5px;
+    letter-spacing: 0.3125rem;
     font-weight:500;
     font-size: var(--text-size-1);
 }
 
 .product-text h1{
+    font-family:"Fraunces", serif;
     font-weight: bold;
     font-size: var(--text-size-4);
 }
@@ -105,8 +102,11 @@ p, span, button{
     gap: var(--spacing-200);
 }
 
-.price h1{
+.price span{
     color: var(--Green-500);
+    font-weight: bold;
+    font-size: 2rem ;
+    font-family:"Fraunces", serif;
 }
 
 .price p{
@@ -115,7 +115,7 @@ p, span, button{
 }
 
 button{
-    height: 50px;
+    height: 3.125rem;
     color: var(--White);
     background-color: var(--Green-500);
     border-radius: var(--spacing-100);
@@ -135,7 +135,7 @@ button:hover{
     transition: background-color 0.3s ease-in;
 }
 
-@media (max-width:420px) {
+@media (max-width:26.25rem) {
 
     main{
         margin: var(--spacing-400) 0;
@@ -149,7 +149,8 @@ button:hover{
     }
     .card{
         flex-direction: column;
-        width: 350px;
+        max-width: 21.875rem;
+        width: calc(100% - 2rem);
+        justify-self: center;
     }
-    
 }
