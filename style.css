@@ -1,2 +1,155 @@
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    :root{
+        --Green-500: hsl(158, 36%, 37%);
+        --Green-700: hsl(158, 42%, 18%);
+
+        --Black: hsl(212, 21%, 14%);
+        --Grey: hsl(228, 12%, 48%);
+        --Cream: hsl(30, 38%, 92%);
+        --White: hsl(0, 0%, 100%);
+
+        --spacing-50: 4px;
+        --spacing-100: 8px;
+        --spacing-200: 16px;
+        --spacing-300: 24px;
+        --spacing-400: 32px;
+        --spacing-500: 40px;
+
+        --text-size-1: 12px;
+        --text-size-2: 13px;
+        --text-size-3: 14px;
+        --text-size-4: 32px;
+    }
+
+    .mobile-img {
+        display: none;
+        width: 350px;
+    }
+
+    *, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat";
+    position: relative;
+    background-color: var(--Cream);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--White);
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    border-radius: var(--spacing-100);
+}
+
+.desktop-img{
+    width: 300px;
+    border-radius: var(--spacing-100) 0 0 var(--spacing-100);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-400);
+    gap: var(--spacing-400);
+}
+
+h1{
+    font-family:"Fraunces", serif;
+}
+
+p, span, button{
+    font-family:"Montserrat", sans-serif;
+    color: var(--Grey);
+}
+
+.product-text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+}
+
+.product-text span{
+    letter-spacing: 5px;
+    font-weight:500;
+    font-size: var(--text-size-1);
+}
+
+.product-text h1{
+    font-weight: bold;
+    font-size: var(--text-size-4);
+}
+
+.product-text p{
+    font-weight: 500;
+    font-size: var(--text-size-3);
+    line-height: 160%;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-200);
+}
+
+.price h1{
+    color: var(--Green-500);
+}
+
+.price p{
+    text-decoration: line-through;
+    font-size: var(--text-size-2);
+}
+
+button{
+    height: 50px;
+    color: var(--White);
+    background-color: var(--Green-500);
+    border-radius: var(--spacing-100);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-100);
+    font-weight: bold;
+    font-size: var(--text-size-3);
+    transition: 0.3s ease-out;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--Green-700);
+    transition: background-color 0.3s ease-in;
+}
+
+@media (max-width:420px) {
+
+    main{
+        margin: var(--spacing-400) 0;
+    }
+    .desktop-img{
+        display: none;
+    }
+    .mobile-img{
+        display: block;
+        border-radius: var(--spacing-100) var(--spacing-100) 0 0;
+    }
+    .card{
+        flex-direction: column;
+        width: 350px;
+    }
+    
+}
