@@ -1,13 +1,13 @@
-![Screenshot of project](./design/desktop-preview.jpg)
+![Screenshot of project](./images/Screenshot%202026-11-25%20161035.jpg)
 
-[Frontend Mentor](https://www.frontendmentor.io)projects provide by Frontend Mentor
+[Frontend Mentor](https://www.frontendmentor.io) projects provide by Frontend Mentor
 
 This project is a product card that will change orientation depending if it on desktop or mobile. The mean take away of this project refining what I already know
 
 ### Solution Links
 
 - Solution URL: [EBrown2124/product-preview-card-component](https://github.com/EBrown2124/product-preview-card-component)
-- Live Site URL: [EBrown2124/product-preview-card-component](https://your-live-site-url.com)
+- Live Site URL: [EBrown2124/product-preview-card-component](https://ebrown2124.github.io/product-preview-card-component/)
 
 ### Built with
 
@@ -17,14 +17,14 @@ This project is a product card that will change orientation depending if it on d
 
 - Flexbox
 
-### WHAT LEARN AND USED
+### WHAT I LEARN AND USED
 
 ```CSS
 
 .element{
     width: calc();
 }
-
+```
 
 ### Links
 - Github - [EBrown2124](https://github.com/EBrown2124)
